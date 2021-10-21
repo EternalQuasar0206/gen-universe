@@ -39,6 +39,7 @@ body h1 {
 
 #wrapper {
     width: 100%;
+    background: none;
 }
 
 #wrapper .related, .asset-gallery {
@@ -47,4 +48,5 @@ body h1 {
 
 .content {
     position: fixed;
+    right: 0;
 }
