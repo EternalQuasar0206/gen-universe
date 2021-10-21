@@ -38,6 +38,13 @@ body h1 {
 }
 
 #wrapper {
-    width: 80%;
-    background: #111111;
+    width: 100%;
+}
+
+#wrapper .related, .asset-gallery {
+    padding: 5%;
+}
+
+.content {
+    position: fixed;
 }
