@@ -6,6 +6,7 @@
 :root {
     --background: #0a0a0c;
     --foreground: #111111;
+    --x-foreground: #222;
     --borders: #1A1A1A;
     --titles: #BBB;
     --texts: #CCC;
@@ -47,9 +48,11 @@ body h1 {
 }
 
 .content {
+    transition: 1s;
     position: fixed;
     right: 0;
     top: 0;
 
-    background: blue;
+    background: var(--x-foreground);
+    padding: 2%;
 }
