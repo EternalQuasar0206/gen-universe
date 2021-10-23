@@ -50,4 +50,6 @@ body h1 {
     position: fixed;
     right: 0;
     top: 0;
+
+    background: blue;
 }
