@@ -4,11 +4,11 @@ regionInfo.innerText = regionInfo.innerText.replace(regionInfo.innerText[0], reg
 
 /* Turn content screen Dynamic */
 
-var closeContentButton = document.createElement("div");
-closeContentButton.addEventListener("click", () => {
-    document.querySelectorAll(".content")[0].style.right = "-9999";
-})
-closeContentButton.style.cursor = "pointer";
-closeContentButton.innerText = "(X)";
 
-document.querySelectorAll(".content")[0].firstElementChild.appendChild(closeContentButton);
+var closeContentButton = (`
+    <div style="cursor: pointer" onclick="document.querySelectorAll('.content')[0].style.right = '-35%';">
+        (X)
+    </div>
+`);
+
+document.querySelectorAll(".content")[0].firstElementChild.innerHTML += (closeContentButton);
